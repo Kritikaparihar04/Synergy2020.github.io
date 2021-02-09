@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ignite'21-Synergy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/synergy.jpeg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light " id="ftco-navbar ">
+        <div class="container ">
+            <a class="navbar-brand " href="index.html "><span><img src="img/FooterLogo.png " alt=" " > </span></a>
+
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#ftco-nav " aria-controls="ftco-nav " aria-expanded="false " aria-label="Toggle navigation ">
+	        <span class="oi oi-menu "></span> Menu
+	      </button>
+            <style>
+                .navbar-brand img {
+                    width: 80px;
+                    height: 40px;
+                }
+                
+                .dropdown {
+                    position: absolute;
+                    display: none;
+                    list-style-type: none;
+                    border-radius: 6px;
+                    margin: auto;
+                    padding: 10px;
+                    background-color: black;
+                }
+                
+                .dropdown li {
+                    display: block;
+                    margin: auto;
+                    padding: 5px 10px;
+                }
+                
+                .dropdown li a {
+                    text-align: center;
+                    color: white;
+                }
+                
+                .dropdown::after {
+                    content: " ";
+                    position: absolute;
+                    bottom: 100%;
+                    left: 30%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: transparent transparent black transparent;
+                }
+                
+                .dropdownMymenu:hover .dropdown {
+                    display: block;
+                }
+                
+                @media only screen and (max-width: 992px) {
+                    .dropdown {
+                        display: block;
+                        position: initial;
+                        background-color: orange;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                    .dropdown li {
+                        padding: 5px;
+                    }
+                    .dropdown li a {
+                        text-align: center;
+                        color: black;
+                    }
+                    .navbar-brand {
+                        padding: 0px 5px;
+                    }
+                    .navbar-brand img {
+                        width: 60px;
+                        height: 30px;
+                    }
+                }
+            </style>
+            <div class="collapse navbar-collapse " id="ftco-nav ">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item "><a href="index.html " class="nav-link ">Home</a></li>
+                    <li class="nav-item "><a href="event.html " class="nav-link ">Events</a></li>
+                    <li class="nav-item "><a href="team.html " class="nav-link ">Team</a></li>
+                    <li class="nav-item dropdownMymenu "><a class="nav-link ">Winners</a>
+                        <ul class="dropdown ">
+
+                            <li class="nav-item "><a href="winner20.html ">Winners 2020</a></li>
+                            <li class="nav-item "><a href="winner19.html ">Winners 2019</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item dropdownMymenu active "><a class="nav-link ">Ignite</a>
+                        <ul class="dropdown ">
+                            <li class="nav-item "><a href="ignite21.html ">Ignite 2021</a></li>
+                            <li class="nav-item "><a href="ignite20.html ">Ignite 2020</a></li>
+                            <li class="nav-item "><a href="ignite19.html ">Ignite 2019</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item "><a href="contact.html " class="nav-link ">Contact</a></li>
+                    <li class="nav-item " style="float: right;cursor:pointer " onclick="openNav() "><a class="nav-link ">Sponsors</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+    <!-- Sponsors stylesheet -->
+    <style>
+        .tree {
+            font-family:serif;
+        
+            font-size:10vw;
+        }
+        .sponsors {
+            text-align: center;
+            font-size: 20px;
+            /* text-transform: uppercase; */
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #222;
+            animation: text 3s 1;
+            color: white;
+        }
+        
+        .Sponsorstext {
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #222;
+            animation: text 3s 1;
+            color: white;
+            padding-top: 10%;
+        }
+        
+        .flip-box {
+            background-color: transparent;
+            width: 250px;
+            height: 100px;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+        /* This container is needed to position the front and back side */
+        
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        /* Position the front and back side */
+        
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+        /* Style the front side */
+        
+        .flip-box-front {
+            background-color: black;
+            color: black;
+        }
+        
+        .flip-box-front img {
+            border-radius: 10px;
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        
+        .flip-box:hover .flip-box-inner {
+            transform: rotateX(180deg);
+        }
+        /* Style the back side */
+        
+        .flip-box-back {
+            background-color: orange;
+            color: white;
+            transform: rotateX(180deg);
+        }
+        /* .heading {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #222;
+            animation: text 3s 1;
+            color: black;
+            display: block;
+            margin: auto;
+        }
+        
+        .myimg {
+            width: 100%;
+            max-width: 620px;
+            height: auto;
+            margin: 8px;
+        }
+         */
+        .glow {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+            background: orange;
+        } 
+        
+        .sidenav {
+            height: 100vh;
+            overflow-y: auto;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: 25px;
+            color: white;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .column {
+  float: left;
+  width: 33%;
+  background-color: #65C7D0;
+}
+
+.column img{
+    border-radius: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <!--End  Sponsors stylesheet -->
+    <!-- Sponsors code -->
+    <div id="mySidenav " class="sidenav ">
+        <a href="javascript:void(0) " class="closebtn " onclick="closeNav() ">&times;</a>
+        <div class="sponsors ">Ignite'21 Sponsors</div>
+
+        <div class="flip-box ">
+            <div class="flip-box-inner ">
+                <div class="flip-box-front ">
+                    <img src="img/Sponsors/1.jpg ">
+                </div>
+                <div class="flip-box-back ">
+                    <div class="Sponsorstext ">CONSTRUCTION <br> PARTNER</div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box ">
+            <div class="flip-box-inner ">
+                <div class="flip-box-front ">
+                    <img src="img/Sponsors/2.jpg ">
+                </div>
+                <div class="flip-box-back ">
+                    <div class="Sponsorstext ">GIFTING <br> PARTNER</div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box ">
+            <div class="flip-box-inner ">
+                <div class="flip-box-front ">
+                    <img src="img/Sponsors/3.jpg ">
+                </div>
+                <div class="flip-box-back ">
+                    <div class="Sponsorstext ">KNOWLEDGE <br>PARTNER</div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box ">
+            <div class="flip-box-inner ">
+                <div class="flip-box-front ">
+                    <img src="img/Sponsors/4.jpg ">
+                </div>
+                <div class="flip-box-back ">
+                    <div class="Sponsorstext ">ENTRY <br> PARTNER</div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box ">
+            <div class="flip-box-inner ">
+                <div class="flip-box-front ">
+                    <img src="img/Sponsors/5.jpg ">
+                </div>
+                <div class="flip-box-back ">
+                    <div class="Sponsorstext ">ONLINE<br> MEDIA PARTNER</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav ").style.width = "250px ";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav ").style.width = "0 ";
+        }
+    </script>
+    <!--End Sponsors code -->
+
+    <section class="hero-wrap hero-wrap-2 " style="background-image: url('https://bloximages.chicago2.vip.townnews.com/morningjournal.com/content/tncms/assets/v3/editorial/9/01/901e0984-f282-11e8-b81e-a7cd6bdc6d09/5bfda86418b22.image.jpg?resize=1200%2C800');
+        " data-stellar-background-ratio="0.9 ">
+        <div class="overlay "></div>
+        <div class="container ">
+            <div class="row no-gutters slider-text align-items-end justify-content-center ">
+                <div class="col-md-9 ftco-animate pb-5 text-center ">
+                    <h1 style=" color:lightyellow ;  " class="tree">IGNITE 2021</h1>
+                    <!-- <p><a href="# " class="btn btn-primary py-3 px-4 ">Join the Club</a> <a href="# " class="btn btn-black py-3 px-4 ">Read more</a></p> -->
+                    <!-- <p class="breadcrumbs "><span class="mr-2 "><a href="index.html ">Home <i class="ion-ios-arrow-forward "></i></a></span> <span>Ignite'20<i class="ion-ios-arrow-forward "></i></span></p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img " id="section-counter ">
+        <div class="container ">
+            <div class="row d-flex ">
+
+                <div class="col-md-12 pl-lg-5 py-5 ">
+                    <div class="row justify-content-start pb-3 ">
+                        <div  class="col-md-12 heading-section ftco-animate ">
+                            <h1 style=" color: rgb(29, 56, 2)  ;"  class="mb-4 text-center font-weight-bold">The Annual Sports Event Of IGDTUW</h1>
+                            <p style="font-size: 20px;color:black ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis commodi quisquam consectetur, deserunt sapiente consequatur obcaecati vitae, illo magnam at modi est eligendi ipsa quas blanditiis labore veniam voluptate omnis?
+                                <!-- “Sports teach us to Compete and Complete. Compete to win the race and Complete to finish the race, even if we are at last “ – Vijaya Gowrisankar.
+                                <br> After an impeccable first edition witnessing talent from all over Delhi, IGNITE organised the second edition of the Annual Sports Fest of IGDTUW - IGNITE 2020 on the 14th and 15th of February 2020 at the prestigious
+                                Jawaharlal Nehru Stadium. The illustrious parathlete, <span class="font-weight-bold text-dark ">Mr. Sandeep Singh Maan</span>, graced the occasion as our Chief Guest.
+
+                                <br>
+
+                                <br> Athletic Events and sporting tournaments in Basketball, Badminton, Table Tennis and Volleyball were organised under the supervision of experienced refrees in order to ensure a fair game. Teams and individuals from
+                                all over Delhi participated in the various sports events. IGNITE 2020 certainly witnessed the dedication, passion, will and team work of talented players. In order to quantify the well-deserved accolades of the various
+                                winners of IGNITE 2020, the Medal Ceremony involves young sportspersons being awarded with medals, certificates and gifts to celebrate their achievements and sportsmanship. The event proved to be a grand success with the
+                                assistance of students and guidance of Dr. Dinesh Ganotra(Faculty Advisor). Synergy hopes to set a benchmark in its third year, involving exceptional students and teams from all over India. -->
+
+                            </p>
+                            <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center ">
+                                <a href="# " target="_blank " class="btn py-3 px-4 text-center " style="background-color: rgb(32, 153, 16);color:black; font-size: 1cm; font-weight: bolder; ">Get Yourself Register !</a>
+                                <!-- <a href="https://youtu.be/hzOvS5C1Fw8 " target="_blank " class="btn py-3 px-4 text-center " style="background-color: orange;color:black; "><span class="icon-youtube ">&nbsp </span>Ignite'20 After Movie</a> -->
+                            <div> <h1>Basketball..............Marathon................Badminton</h1></div>
+                                <div class="row">
+                                    <div class="column">
+                                       <a href="#"> <img src="data:image/jpeg;base64,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"></a>
+                                                                           
+                                    </div>
+                                    <div class="column">
+                                       <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVW2ns4XgOwlv0JX0ePMvUfClpmTz4Fr77Q&usqp=CAU"></a>
+                                     </div>
+
+                                    <div class="column">
+                                        <a href="#"> <img src="data:image/jpeg;base64,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"></a>
+                                  </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <style>
+            .container {
+            padding: 3% 3%;
+        }
+        
+        .main-timeline {
+            font-family: 'Roboto', sans-serif;
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .main-timeline:before,
+        .main-timeline:after {
+            content: '';
+            height: 40px;
+            width: 40px;
+            background-color: #e7e7e7;
+            border-radius: 50%;
+            border: 10px solid #303334;
+            transform: translateX(-50%);
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            z-index: 2;
+        }
+        
+        .main-timeline:after {
+            top: auto;
+            bottom: 15px;
+        }
+        
+        .main-timeline .timeline {
+            padding: 35px 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .main-timeline .timeline:before,
+        .main-timeline .timeline:after {
+            content: '';
+            height: 100%;
+            width: 50%;
+            border-radius: 100px 0 0 100px;
+            border: 15px solid #46B2BC;
+            border-right: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        
+        .main-timeline .timeline:after {
+            height: calc(100% - 30px);
+            width: calc(50% - 12px);
+            border-color: #65C7D0;
+            left: 12px;
+            top: 15px;
+        }
+        
+        .main-timeline .timeline-content {
+            display: inline-block;
+        }
+        
+        .main-timeline .timeline-content:hover {
+            text-decoration: none;
+        }
+        
+        .main-timeline .timeline-year {
+            color: #65C7D0;
+            font-size: 28px;
+            font-weight: 600;
+            display: inline-block;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+        
+        .main-timeline .timeline-icon {
+            color: #65C7D0;
+            font-size: 80px;
+            display: inline-block;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 34%;
+            top: 50%;
+        }
+        
+        .main-timeline .content {
+            color: #909090;
+            width: 50%;
+            padding: 20px;
+            display: inline-block;
+            float: right;
+        }
+        
+        .main-timeline .title {
+            color: #65C7D0;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+        }
+        
+        .main-timeline .description {
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        .main-timeline .timeline:nth-child(even):before {
+            left: auto;
+            right: 0;
+            border-radius: 0 100px 100px 0;
+            border: 15px solid red;
+            border-left: none;
+        }
+        
+        .main-timeline .timeline:nth-child(even):after {
+            left: auto;
+            right: 12px;
+            border: 15px solid green;
+            border-left: none;
+            border-radius: 0 100px 100px 0;
+        }
+        
+        .main-timeline .timeline:nth-child(even) .content {
+            float: left;
+        }
+        
+        .main-timeline .timeline:nth-child(even) .timeline-year {
+            left: auto;
+            right: 10%;
+        }
+        
+        .main-timeline .timeline:nth-child(even) .timeline-icon {
+            left: auto;
+            right: 32%;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+2):before {
+            border-color: #EA3C14;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+2):after {
+            border-color: #EF5720;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+2) .timeline-icon {
+            color: #EA3C14;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+2) .timeline-year {
+            color: #EA3C14;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+2) .title {
+            color: #EA3C14;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+3):before {
+            border-color: #8CC63E;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+3):after {
+            border-color: #6CAF29;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+3) .timeline-icon {
+            color: #8CC63E;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+3) .timeline-year {
+            color: #8CC63E;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+3) .title {
+            color: #8CC63E;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+4):before {
+            border-color: #F99324;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+4):after {
+            border-color: #FBB03B;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+4) .timeline-icon {
+            color: #F99324;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+4) .timeline-year {
+            color: #F99324;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+4) .title {
+            color: #F99324;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+5):before {
+            border-color: #0071BD;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+5):after {
+            border-color: #0050A3;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+5) .timeline-icon {
+            color: #0071BD;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+5) .timeline-year {
+            color: #0071BD;
+        }
+        
+        .main-timeline .timeline:nth-child(5n+5) .title {
+            color: #0071BD;
+        }
+        
+        @media screen and (max-width:1200px) {
+            .main-timeline .timeline:after {
+                border-radius: 88px 0 0 88px;
+            }
+            .main-timeline .timeline:nth-child(even):after {
+                border-radius: 0 88px 88px 0;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .main-timeline .timeline {
+                margin-top: -19px;
+            }
+            .main-timeline .timeline:before {
+                border-radius: 50px 0 0 50px;
+                border-width: 10px;
+            }
+            .main-timeline .timeline:after {
+                height: calc(100% - 18px);
+                width: calc(50% - 9px);
+                border-radius: 43px 0 0 43px;
+                border-width: 10px;
+                top: 9px;
+                left: 9px;
+            }
+            .main-timeline .timeline:nth-child(even):before {
+                border-radius: 0 50px 50px 0;
+                border-width: 10px;
+            }
+            .main-timeline .timeline:nth-child(even):after {
+                height: calc(100% - 18px);
+                width: calc(50% - 9px);
+                border-radius: 0 43px 43px 0;
+                border-width: 10px;
+                top: 9px;
+                right: 9px;
+            }
+            .main-timeline .timeline-icon {
+                font-size: 60px;
+            }
+            /* .main-timeline .timeline-year {
+                font-size: 40px;
+            } */
+        }
+        
+        @media screen and (max-width:479px) {
+            .main-timeline .timeline-icon {
+                font-size: 50px;
+                transform: translateY(0);
+                top: 25%;
+                left: 10%;
+            }
+            .main-timeline .timeline-year {
+                font-size: 18px;
+                transform: translateY(0);
+                top: 65%;
+                left: 9%;
+                transform: rotate(-90deg);
+            }
+            .main-timeline .content {
+                width: 68%;
+                padding: 10px;
+            }
+            .main-timeline .title {
+                font-size: 18px;
+            }
+            .main-timeline .timeline:nth-child(even) .timeline-icon {
+                right: 10%;
+            }
+            .main-timeline .timeline:nth-child(even) .timeline-year {
+                right: 9%;
+                transform: rotate(90deg);
+            }
+    </style>
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div class="main-timeline ">
+                    <div class="timeline ">
+                        <a href="# " class="timeline-content ">
+                            <span class="timeline-year ">Day,Date & Time</span>
+                            <div class="timeline-icon ">
+                                <i class="fa fa-running "></i>
+                            </div>
+                            <div class="content ">
+                                <h3 class="title ">Event Name</h3>
+                                <p class="description ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline ">
+                        <a href="# " class="timeline-content ">
+                            <span class="timeline-year ">Day,Date & Time</span>
+                            <div class="timeline-icon ">
+                                <i class="fa fa-running "></i>
+                            </div>
+                            <div class="content ">
+                                <h3 class="title ">Event Name</h3>
+                                <p class="description ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline ">
+                        <a href="# " class="timeline-content ">
+                            <span class="timeline-year ">Day,Date & Time</span>
+                            <div class="timeline-icon ">
+                                <i class="fa fa-running "></i>
+                            </div>
+                            <div class="content ">
+                                <h3 class="title ">Event Name</h3>
+                                <p class="description ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline ">
+                        <a href="# " class="timeline-content ">
+                            <span class="timeline-year ">Day,Date & Time</span>
+                            <div class="timeline-icon ">
+                                <i class="fa fa-running "></i>
+                            </div>
+                            <div class="content ">
+                                <h3 class="title ">Event Name</h3>
+                                <p class="description ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline ">
+                        <a href="# " class="timeline-content ">
+                            <span class="timeline-year ">Day,Date & Time</span>
+                            <div class="timeline-icon ">
+                                <i class="fa fa-running "></i>
+                            </div>
+                            <div class="content ">
+                                <h3 class="title ">Event Name</h3>
+                                <p class="description ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <style>
+        #footer {
+            padding: 15px;
+            padding-top: 25px;
+        }
+        
+        .text {
+            padding: 0px;
+            text-align: left;
+        }
+    </style>
+    <footer class="ftco-footer ftco-footer-2 ftco-section " id="footer">
+        <div class="container ">
+            <div class="row mb-1 ">
+                <div class="col-md ">
+                    <div class="ftco-footer-widget mb-2 ">
+                        <h2 class="ftco-heading-2 ">Synergy</h2>
+                        <p class="text ">The Sports Society of Indira Gandhi Delhi Technical University For Women</p>
+                        <ul class="list-unstyled ">
+                            <li><a href="mailto: synergy@igdtuw.ac.in "><span class="icon icon-envelope ">&nbsp synergy@igdtuw.ac.in</span></a></li>
+                        </ul>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+                            <li class="ftco-animate "><a href="https://www.linkedin.com/company/synergy-sports-society-of-igdtuw/ "><span class="icon-linkedin "></span></a></li>
+                            <li class="ftco-animate "><a href="https://www.facebook.com/igdtuwsportsclub "><span class="icon-facebook "></span></a></li>
+                            <li class="ftco-animate "><a href="https://www.instagram.com/synergy_igdtuw/ "><span class="icon-instagram "></span></a></li>
+                            <li class="ftco-animate "><a href="https://www.youtube.com/channel/UC1BZemcKB4j9mbwSmHNkoew "><span class="icon-youtube "></span></a></li>
+
+                        </ul>
+                        <br>
+
+
+                    </div>
+                </div>
+                <div class="col-md ">
+                    <div class="ftco-footer-widget mb-2 ">
+                        <h2 class="ftco-heading-2 ">Contact</h2>
+                        <div class="block-23 mb-3 ">
+                            <ul>
+                                <li><a><span class="icon icon-map-marker "></span><span class="text "> Madrasa Road
+									Opposite St. James Church
+									Kashmere Gate
+									Delhi-110006</span></a></li>
+                                <li><a><span class="icon icon-phone "></span><span class="text ">Nisha Singh (President) - 7357484929</span></a>
+
+                                    <a><span class="icon icon-phone "></span><span class="text ">Shreya Prasad (General Secretary) - 9752698648</span></a>
+
+                                    <a><span class="icon icon-phone "></span><span class="text ">Manya Kumari (Treasurer)- 7011273721</span></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12 text-center ">
+                    <p>
+                        Developed by <a href="https://www.linkedin.com/in/tanya-garg-b51221145/ " target="_blank ">Tanya Garg (MCA, IGDTUW)</a> Web-D Core of Synergy
+                        <br>Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen "><svg class="circular " width="48px " height="48px "><circle class="path-bg " cx="24 " cy="24 " r="22 " fill="none " stroke-width="4 " stroke="#eeeeee "/><circle class="path " cx="24 " cy="24 " r="22
+        " fill="none " stroke-width="4 " stroke-miterlimit="10 " stroke="#F96D00 "/></svg></div>
+
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/jquery.animateNumber.min.js "></script>
+    <script src="js/bootstrap-datepicker.js "></script>
+    <script src="js/scrollax.min.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false "></script>
+    <script src="js/google-map.js "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
